@@ -62,6 +62,9 @@
                         </a>
                     </li>
                 </ul>
+                <div class="logout">
+                    <button class="logout__button">Logout</button>
+                </div>
             </div>
         </nav>
 
@@ -90,33 +93,16 @@
                         
                     <a href="#">
                         <i class='bx bxs-bell-ring notification'></i>
+                        <i style="display: none;" class='bx bxs-bell-ring notification__ring'></i>
                         <div class="notifications-container" style="display: none;">
                             <ul>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                            </ul>
+                                <li><p class="user__name">Amr Khaled</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                                <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                                <li><p class="user__name">Omar Hesham</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                              </ul>
                         </div>
                     </a>
                     
@@ -141,10 +127,50 @@
                             </div>
                             <div class="profile__name">
                                 <h1 class="nav__name"><p class="user__name">Abdelrahman <br> Mahmoud</p></h1>
+
+                                <a href="" class="edit__button">
+                                    Edit profile
+                                </a>
+                                
                             </div>
                             
-                            
                     </div>
+
+                    <div class="thinking__line"></div>
+
+                    <div class="follow__section">
+                        <a class="posts__count counter" href="">
+                            <h1>5</h1>
+                            <h2>posts</h2>
+                        </a>
+                        <a class="followers__count counter" href="">
+                            <h1>500</h1>
+                            <h2>followers</h2>
+                        </a>
+                        <a class="following__count counter" href="">
+                            <h1>200</h1>
+                            <h2>following</h2>
+                        </a>
+                    </div>
+
+                    <div class="thinking__line"></div>
+
+                    </div>
+
+                    <div class="post__maker">
+                        <h2>Personal Information :</h2>
+
+                        <div class="personal__info">
+                            <div class="thinking__line"></div>
+                            <div><i class="bx bx-message-square-edit input__lock"></i> Age : 22 years old</div>
+                            <div class="thinking__line"></div>
+                            <div><i class="bx bx-bone input__lock"></i> Height : 170 cm</div>
+                            <div class="thinking__line"></div>
+                            <div><i class="bx bx-cookie input__lock"></i> Weight : 80 kg</div>
+                            <div class="thinking__line"></div>
+                            <div><i class="bx bxs-capsule input__lock"></i> Body fat percentage : 17 %</div>
+                            <div class="thinking__line"></div>
+                        </div>
                     </div>
 
                     <div class="post__maker">
@@ -160,13 +186,15 @@
                         <div class="thinking__line"></div>
 
                         <div class="thinking__share">
-                            <div class="photo">
+                            <button id="fileButton" class="photo">
                                 <i class="ri-image-add-fill"></i>  <p>Photo</p>
-                            </div>
+                            </button>
+                            <input type="file" id="fileInput" style="display: none;">
+                            
 
-                            <div class="post">
+                            <button class="post">
                                 <i class="ri-share-forward-fill"></i> <p>Post</p>
-                            </div>
+                            </button>
                         </div>
                     </div>
 
@@ -197,41 +225,11 @@
                                 <div class="likes-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -240,14 +238,11 @@
                                 <div class="comments-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p> gamd</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -255,6 +250,9 @@
                         <div class="thinking__line"></div>
                         <div class="posts__reaction">
                             <div class="like" id="like-reaction">
+                                <i class="ri-thumb-up-fill"></i>  <p>Like</p>
+                            </div>
+                            <div style="display: none;" class="liked">
                                 <i class="ri-thumb-up-fill"></i>  <p>Like</p>
                             </div>
                             <div class="post comment-box">
@@ -305,41 +303,11 @@
                                 <div class="likes-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -348,14 +316,11 @@
                                 <div class="comments-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p> gamd</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -363,6 +328,9 @@
                         <div class="thinking__line"></div>
                         <div class="posts__reaction">
                             <div class="like" id="like-reaction">
+                                <i class="ri-thumb-up-fill"></i>  <p>Like</p>
+                            </div>
+                            <div style="display: none;" class="liked">
                                 <i class="ri-thumb-up-fill"></i>  <p>Like</p>
                             </div>
                             <div class="post comment-box">
@@ -415,41 +383,11 @@
                                 <div class="likes-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -458,14 +396,11 @@
                                 <div class="comments-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p> gamd</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -473,6 +408,9 @@
                         <div class="thinking__line"></div>
                         <div class="posts__reaction">
                             <div class="like" id="like-reaction">
+                                <i class="ri-thumb-up-fill"></i>  <p>Like</p>
+                            </div>
+                            <div style="display: none;" class="liked">
                                 <i class="ri-thumb-up-fill"></i>  <p>Like</p>
                             </div>
                             <div class="post comment-box">
@@ -525,41 +463,11 @@
                                 <div class="likes-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p></li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
-                                      <li><p class="user__name">Amr Khaled</p></li>
-                                      <li><p class="user__name">Fouad Mahmoud</p></li>
-                                      <li><p class="user__name">Omar Hesham</p></li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -568,14 +476,11 @@
                                 <div class="comments-container" style="display: none;">
                                     <ul>
                                       <li><p class="user__name">Amr Khaled</p> gamd</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
+                                      <div class="thinking__line"></div>
                                       <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
-                                      <li><p class="user__name">Amr Khaled</p> gamd</li>
-                                      <li><p class="user__name">Fouad Mahmoud</p> you doing well</li>
-                                      <li><p class="user__name">Omar Hesham</p> nice </li>
+                                      <div class="thinking__line"></div>
                                     </ul>
                                 </div>
                             </div>
@@ -583,6 +488,9 @@
                         <div class="thinking__line"></div>
                         <div class="posts__reaction">
                             <div class="like" id="like-reaction">
+                                <i class="ri-thumb-up-fill"></i>  <p>Like</p>
+                            </div>
+                            <div style="display: none;" class="liked">
                                 <i class="ri-thumb-up-fill"></i>  <p>Like</p>
                             </div>
                             <div class="post comment-box">

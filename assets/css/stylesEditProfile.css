@@ -5,8 +5,8 @@
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color:hsl(0, 100%, 62%);
-  --second-color:hsl(0, 67%, 52%) ;
+  --first-color:hsl(0, 67%, 52%);
+  --second-color: hsl(0, 100%, 62%);
   --title-color: hsl(244, 12%, 12%);
   --text-color: hsl(232, 8%, 35%);
   --white-color:hsl(232,100%,99%);
@@ -64,26 +64,6 @@ input[type=number]::-webkit-inner-spin-button{
     appearance: none;
 }
 
-select{
-    cursor: pointer;
-}
-
-select option {
-    position: relative;
-    background-color: var(--container-color);
-    padding: .5rem .75rem;
-    border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-    display: flex;
-    align-items: center;
-    column-gap: .75rem;
-    margin-right: 1rem;
-    cursor: pointer;
-    
-}
 /*=============== LOGIN FORM ===============*/
 
 .login__content,
@@ -104,6 +84,7 @@ select option {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  background-color: #242527;
 }
 
 .login__form{
@@ -238,7 +219,6 @@ select option {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     background: var(--first-color);
-    /* background: linear-gradient(180deg, var(--first-color) ,var(--second-color)); */
     color: #fff;
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
@@ -246,7 +226,54 @@ select option {
     cursor: pointer;
     margin-left: 6rem;
 }
+
+.nav__img {
+    width: 70px;
+  }
   
+  .nav__mask {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(224deg, #e92f2f -2%, #feaaaa 97%);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .background__edit{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+
+  .follow__button{
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
+    padding: 0.6rem;
+    background-color:hsl(0, 67%, 52%) ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    cursor: pointer;
+    height: 2rem;
+    
+  }
+  
+  .follow__button:hover{
+    background-color:hsl(0, 100%, 62%) ;
+  }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
@@ -290,16 +317,16 @@ select option {
   }
 
   .login__img{
-    border-radius: 3.5rem;
-    -webkit-border-radius: 3.5rem;
-    -moz-border-radius: 3.5rem;
-    -ms-border-radius: 3.5rem;
-    -o-border-radius: 3.5rem;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
     box-shadow:0 24px 48px hsla(244,75%,36%,.45) ;
-  }
+}
   .login__form{
     position: absolute;
-    height: 90%;
+    height: 98%;
     justify-self: flex-end;
     margin-right: 4.5rem;
   }

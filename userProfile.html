@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/stylesTimeline.css">
+        <link rel="stylesheet" href="assets/css/stylesProfile.css">
 
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -13,13 +13,15 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== lightbox ===============-->
+        <link href="assets/lightbox2-2.11.4/dist/css/lightbox.min.css" rel="stylesheet" />
 
         <title>FitnessFuelX</title>
     </head>
     <body>
     
 
-    <!--=============== NAVBAR ===============-->
+    <!--=============== SIDEBAR ===============-->
         <nav class="nav" id="nav">
             <div class="nav__menu container" id="nav-menu">
                 <div class="nav__shape"></div>
@@ -30,7 +32,6 @@
                 
                 <div class="nav__data">
                     <div class="nav__mask">
-                        
                         <img src="assets/img/perfil.png" alt="" class="nav__img">
                     </div>
 
@@ -94,13 +95,13 @@
                         <i style="display: none;" class='bx bxs-bell-ring notification__ring'></i>
                         <div class="notifications-container" style="display: none;">
                             <ul>
-                              <li><p class="user__name">Amr Khaled</p> Started following you.</li>
-                              <div class="thinking__line"></div>
-                              <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
-                              <div class="thinking__line"></div>
-                              <li><p class="user__name">Omar Hesham</p> Started following you.</li>
-                              <div class="thinking__line"></div>
-                            </ul>
+                                <li><p class="user__name">Amr Khaled</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                                <li><p class="user__name">Fouad Mahmoud</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                                <li><p class="user__name">Omar Hesham</p> Started following you.</li>
+                                <div class="thinking__line"></div>
+                              </ul>
                         </div>
                     </a>
                     
@@ -116,6 +117,49 @@
             <section class="section section__height container" id="home">
                 <!-- here i will put post and create post  -->
                 <div class="page__container">
+                    <div class="post__maker">
+                        <div class="profile__container">
+                            <div class="profile__mask">
+                                <a href="assets/img/perfil.png" data-lightbox="image-1" data-title="Profile Picture">
+                                    <img class="profile__img" src="assets/img/perfil.png" alt="">
+                                </a>
+                            </div>
+                            <div class="profile__name">
+                                <h1 class="nav__name"><p class="user__name">Abdelrahman <br> Mahmoud</p></h1>
+
+                                <button class="follow__button">
+                                    Follow
+                                </button>
+
+                                <button style="display: none;" class="following__button">
+                                    Following
+                                </button>
+                                
+                            </div>
+                            
+                    </div>
+
+                    <div class="thinking__line"></div>
+
+                    <div class="follow__section">
+                        <a class="posts__count counter" href="">
+                            <h1>5</h1>
+                            <h2>posts</h2>
+                        </a>
+                        <a class="followers__count counter" href="">
+                            <h1>500</h1>
+                            <h2>followers</h2>
+                        </a>
+                        <a class="following__count counter" href="">
+                            <h1>200</h1>
+                            <h2>following</h2>
+                        </a>
+                    </div>
+
+                    <div class="thinking__line"></div>
+
+                    </div>
+
                     <div class="post__maker">
                         <div class="post__thinking">
                             <div class="post__img">
@@ -139,7 +183,6 @@
                                 <i class="ri-share-forward-fill"></i> <p>Post</p>
                             </button>
                         </div>
-
                     </div>
 
                     <div class="post__maker main-post post-maker" >
@@ -163,7 +206,7 @@
                         <div class="posts__img">
                             <img src="assets/img/gymman.jpg" alt="">
                         </div>
-                   <div class="reaction__container">
+                        <div class="reaction__container">
                             <div class="likes">
                                 <i class='bx bxs-like'></i> 98
                                 <div class="likes-container" style="display: none;">
@@ -467,5 +510,6 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/timeline.js"></script>
+    <script src="assets/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
     </body>
 </html>
