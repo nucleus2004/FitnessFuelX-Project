@@ -395,11 +395,11 @@ position: relative;
 
 .notification__ring{
   font-size: 1.2rem;
-  color: var(--title-color-dark);
+  color: var(--first-color);
 }
 
 .notification__ring:hover{
-  color: var(--first-color);
+  color: var(--first-color-shape);
 }
 
 .icons{
