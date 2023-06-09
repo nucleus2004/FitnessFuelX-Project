@@ -145,24 +145,6 @@ comments.forEach(comment => {
 
 
 
-/*=============== X delete post===============*/
-
-// // Get all the delete buttons and the posts container
-// const deleteBtns = document.querySelectorAll('.delete-post');
-// const postsContainer = document.querySelector('.page__container');
-
-// // Add a click event listener to each delete button
-// deleteBtns.forEach(deleteBtn => {
-//   deleteBtn.addEventListener('click', () => {
-//     const posts = document.querySelectorAll('.post-maker');
-//     if (posts.length > 1) {
-//       // Remove the parent post element from the DOM
-//       deleteBtn.closest('.post__maker').remove();
-//     } else {
-//       alert('You cannot delete this post. There must be at least one post on your time line.');
-//     }
-//   });
-// });
 
 
 document.getElementById('fileButton').addEventListener('click', function() {
@@ -176,3 +158,8 @@ document.getElementById('fileInput').addEventListener('change', function() {
     console.log('Selected file:', fileName);
   }
 });
+
+
+
+
+

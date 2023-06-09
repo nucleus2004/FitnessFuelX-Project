@@ -79,8 +79,9 @@ img {
 }
 
 .section__height {
-  height: auto;
+  height: 100vh;
 }
+
 
 /*=============== HEADER Y NAV ===============*/
 .nav {
