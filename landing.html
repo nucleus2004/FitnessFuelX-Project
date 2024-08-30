@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
     <!--=============== BOXICON ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/stylesHome.css">
+
     <title>FitnessFuelX</title>
 </head>
-
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -20,42 +22,11 @@
             <a href="#" class="nav__logo">
                 <img src="assets/img/favicon.png" alt="logo"> FitnessFuelX
             </a>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="landing.html" class="nav__link active-link">𝐇𝐨𝐦𝐞</a>
-                    </li>
-                    <!-- <li class="nav__item">
-                        <a href="#program" class="nav__link">program</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#choose" class="nav__link">choose</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#pricing" class="nav__link">pricing</a>
-                    </li> -->
-                    <!-- <div class="nav__link">
-                        <button onclick="window.location.href = 'signup1.html' ;" class="button nav__button">
-                            Register Now
-                        </button>
-                    </div> -->
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class='bx bx-x'></i>
-                </div>
-            </div>
-
-            <!-- toggle button  -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
         </nav>
     </header>
 
     <!--==================== MAIN ====================-->
-    <main class="main">
+    <main class="main" id="main-content">
         <!--==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
@@ -66,14 +37,9 @@
                         In here we will help you to shape and build your ideal
                         body and live your life to the fullest.
                     </p>
-                    <div class="home__buttons">
-                        <a href="login.html" class="button button__flex">
-                            Login <i class="ri-arrow-right-line"></i>
-                        </a>
-                        <a href="signup1.html" class="button button__flex home__register">
-                            Register Now
-                        </a>
-                    </div>
+                    <a href="home.html" class="button button__flex">
+                        Get Started <i class="ri-arrow-right-line"></i>
+                    </a>
                 </div>
 
                 <div class="home__images">
@@ -85,10 +51,6 @@
                 </div>
             </div>
         </section>
-
-        <!--==================== OTHER SECTIONS (SAME AS BEFORE) ====================-->
-        <!-- Add the rest of your sections here... -->
-
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -103,8 +65,7 @@
                 </p>
 
                 <form action="" class="footer__form" id="contact-form">
-                    <input type="email" name="user_email" placeholder="Your Email" class="footer__input"
-                        id="contact-user">
+                    <input type="email" name="user_email" placeholder="Your Email"  class="footer__input" id="contact-user">
                     <button type="submit" class="button">
                         Subscribe
                     </button>
@@ -149,7 +110,7 @@
                         </li>
                         <li>
                             <a href="#" class="footer__link">Diamond</a>
-                        </li>
+                        </li>                       
                     </ul>
                 </div>
 
@@ -179,8 +140,7 @@
         <div class="container">
             <div class="footer__group">
                 <ul class="footer__social">
-                    <a href="https://www.facebook.com/addekrt.vdnewwjf.9/" target="_blank"
-                        class="footer__social-link">
+                    <a href="https://www.facebook.com/addekrt.vdnewwjf.9/" target="_blank" class="footer__social-link">
                         <i class='bx bxl-facebook-circle'></i>
                     </a>
                     <a href="https://twitter.com/abdelrahmmann1" target="_blank" class="footer__social-link">
@@ -196,7 +156,7 @@
                 </span>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -208,10 +168,30 @@
 
     <!--=============== EMAIL JS ===============-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+    
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/home.js"></script>
-</body>
+    <script src="assets/js/home.js"></script> -->
 
+    <!--=============== HIDE CONTENT ON SCROLL ===============-->
+    <script>
+        <!--window.addEventListener('scroll', function() {
+            var mainContent = document.getElementById('main-content');
+            var footerContent = document.getElementById('footer');
+            if (window.scrollY > 100) {  // Adjust the value as needed
+                mainContent.style.display = 'none';
+                footerContent.style.display = 'none';
+            } else {
+                mainContent.style.display = 'block';
+                footerContent.style.display = 'block';
+            }
+        });
+    </script>
+</body>
 </html>
+
+
+
+
+
+
 
